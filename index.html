@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+
+    <section class="mt-5">
+      <div class="container border py-3 m-auto w-50">
+        <h1 class="text-secondary">Crude System</h1>
+        <div class="prodName py-2">
+          <label for="prodName">product name</label>
+          <input id='prodName' class="form-control" type="text">
+        </div>
+        <div class="prodPrice py-2">
+          <label for="Price">product Price</label>
+          <input id='prodPrice' class="form-control" type="text">
+        </div>
+        <div class="prodCategory py-2">
+          <label for="Category">product Category</label>
+          <input id='prodCategory' class="form-control" type="text">
+        </div>
+        <div class="prodDiscription py-2">
+          <label for="Discription">product Discription</label>
+          <textarea id='prodDiscription' class="form-control" type="text"></textarea>
+        </div>
+        <button type="submit" id="subBtn" class="my-1 btn btn-primary">Submit</button>
+        <button type="submit" id="updateBtn" class="my-1 d-none btn btn-success">update</button>
+      </div>
+      <div class="contaner w-20 m-auto">
+          <input onkeydown="retriveDisplay()"  onkeypress="searchData()" class="form-control mt-5" id="search" type="search" placeholder="Search By   product name">
+    </div>
+      <div class="product-list py-5 w-75 m-auto">
+        
+          <table class="table table-striped w-100 text-center">
+            <thead>
+              <th>index</th>
+              <th>product name</th>
+              <th>price</th>
+              <th>Category</th>
+              <th>Discription</th>
+              <th>delete</th>
+              <th>edit</th>
+            </thead>
+            <tbody id="tbody" class="py-5">
+          </tbody>
+           
+          </table>
+        
+      </div>
+    </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
